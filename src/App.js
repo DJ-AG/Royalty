@@ -8,6 +8,9 @@ import HomePage from "./pages/homepage/homepage.component";
 //SHOPPAGE
 import ShopPage from './pages/shop/shop.componen'
 
+//HEADER
+import Header from './components/header/header.component'
+
 const HatsPage = () => (
   <div>
     <h1>HATS PAGE</h1>
@@ -17,6 +20,7 @@ const HatsPage = () => (
 function App() {
   return (
     <div>
+    <Header/>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route  path="/shop" component={ShopPage} />
