@@ -14,11 +14,10 @@ import ShopPage from "./pages/shop/shop.componen";
 import Header from "./components/header/header.component";
 
 //SIGN IN AND SIGN UP
-import SignInAndSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import SignInSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 
 //FireBase
-import { auth, createUserProfileDocument } from "./firebase/firebase.util";
+import { auth, createUserProfileDocument } from "./Firebase/firebase.util";
 
 class App extends React.Component {
   constructor() {
