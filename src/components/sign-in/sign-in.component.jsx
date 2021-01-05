@@ -5,7 +5,7 @@ import "./sign-in.style.scss";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.componen";
 
-import { signInWithGoogle } from '../../firebase/firebase.util'
+import { signInWithGoogle } from "../../firebase/firebase.util";
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -16,20 +16,20 @@ class SignIn extends React.Component {
     };
   }
 
-  handleChange(event) {
-    const { value, name } = event.target;
-    this.setState({ [name]: value });
-  }
-
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.setState({ email: "", password: "" });
-  }
+  };
+
+  handleChange = (event) => {
+    const { value, name } = event.target;
+    this.setState({ [name]: value });
+  };
 
   render() {
     return (
       <div className="sign-in">
-        <h2 className='title'>I already have an account</h2>
+        <h2 className="title">I already have an account</h2>
         <span>Sign in with your email and password</span>
         <form onSubmit={this.handleSubmit}>
           <FormInput
@@ -48,9 +48,11 @@ class SignIn extends React.Component {
             label="password"
             required
           />
-          <div className='Button'>
-          <Button type="submit">Sign In</Button>
-          <Button onClick={signInWithGoogle} isGoogleSighIn>Sign in with Google</Button>
+          <div className="Button">
+            <Button type="submit">Sign In</Button>
+            <Button onClick={signInWithGoogle} isGoogleSighIn>
+              Sign in with Google
+            </Button>
           </div>
         </form>
       </div>
