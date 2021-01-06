@@ -47,7 +47,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='cockPit'>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -61,7 +61,7 @@ class App extends React.Component {
             }
           />
         </Switch>
-      </div>
+        </div>
     );
   }
 }

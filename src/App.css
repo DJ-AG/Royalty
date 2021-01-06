@@ -4,11 +4,23 @@
     padding: 0;
 }
 body {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif; 
     padding: 20px 80px;
 }
-
 a{
     text-decoration: none;
-color: black;
+    color: black;
 }
+  .glow {
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: black;
+    font-weight: bold;
+    padding: 0 2px;
+    margin-left: -7px;
+  }
+  
+
+
+
