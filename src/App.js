@@ -20,8 +20,12 @@ import Header from "./components/header/header.component";
 //SIGN IN AND SIGN UP
 import SignInSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 
+//CheckOut
+import  CheckOutPage from './pages/checkout/checkout.component'
+
 //FireBase
 import { auth, createUserProfileDocument } from "./Firebase/firebase.util";
+
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -55,6 +59,7 @@ class App extends React.Component {
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
           <Route path="/contact" component="" />
+          <Route path="/checkout" component={CheckOutPage}/>
           <Route
             exact
             path="/signin"
