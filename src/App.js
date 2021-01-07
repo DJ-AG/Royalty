@@ -5,6 +5,8 @@ import "./App.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./Redux/user/user.action";
+import { selectCurrentUser } from "./Redux/user/user.selector";
+import { createStructuredSelector } from "reselect";
 
 //HOMEPAGE
 import HomePage from "./pages/homepage/homepage.component";
@@ -47,7 +49,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='cockPit'>
+      <div className="cockPit">
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -61,13 +63,13 @@ class App extends React.Component {
             }
           />
         </Switch>
-        </div>
+      </div>
     );
   }
 }
 
-const mapsStateToProps = ({ user }) => ({
-  currentUser: user.currentUser,
+const mapsStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({
