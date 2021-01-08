@@ -22,6 +22,11 @@ export const selectCartHidden = createSelector(
     (cart) => cart.hidden
 )
 
+export const toggleCartHidden = createSelector(
+  [selectCart],
+  (cart) => !cart.hidden
+)
+
 export const selectCartTotal = createSelector(
     [selectCartItems],
     cartItems =>
