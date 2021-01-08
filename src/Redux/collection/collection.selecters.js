@@ -3,7 +3,7 @@ import { createSelector } from 'reselect'
 const selectCollection = state => state.collection
 
 
-export const selectCollectionSelection = createSelector(
+export const selectCollections = createSelector(
     [selectCollection],
-    collection => collection.shopData
+    collection => collection.collections
 )
