@@ -24,7 +24,7 @@ import SignInSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.compon
 import  CheckOutPage from './pages/checkout/checkout.component'
 
 //FireBase
-import { auth, createUserProfileDocument } from "./Firebase/firebase.util";
+import { auth, createUserProfileDocument } from "./firebase/firebase.util.js";
 
 
 class App extends React.Component {

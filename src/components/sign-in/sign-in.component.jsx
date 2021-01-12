@@ -5,7 +5,7 @@ import "./sign-in.style.scss";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.componen";
 
-import { auth, signInWithGoogle } from "../../Firebase/firebase.util";
+import { auth, signInWithGoogle } from "../../firebase/firebase.util.js";
 
 class SignIn extends React.Component {
   constructor(props) {

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { auth } from "../../Firebase/firebase.util";
+import { auth } from "../../firebase/firebase.util.js";
 
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 
