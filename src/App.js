@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+import { GlobalStyle } from './global-styles/global.style'
 
 import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
@@ -54,6 +54,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="cockPit">
+      <GlobalStyle/>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
