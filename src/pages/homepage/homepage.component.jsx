@@ -1,15 +1,15 @@
 import React from "react";
-import './homepage.style.scss'
 
+import { HomePageContainer } from './homepage.style'
 // Directory 
 import Directory from '../../components/directory/directory.component'
 // Footer
 
 
 const HomePage = () => (
-  <div className="homepage">
+  <HomePageContainer>
   <Directory/>
-  </div>
+  </HomePageContainer>
 );
 
 
