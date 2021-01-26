@@ -3,9 +3,8 @@ import React from "react";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.componen";
 
-import { auth, createUserProfileDocument } from "../../firebase/firebase.util.js";
-
-import "./sign-up.style.scss";
+import {auth,createUserProfileDocument,} from "../../firebase/firebase.util.js";
+import { SignUpContainer, SignUpTitle } from "./sign-up.style";
 
 class SignUp extends React.Component {
   constructor() {
@@ -23,10 +22,10 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) {
       alert("Passwords dont match");
-      this.setState({error:true})
+      this.setState({ error: true });
       return;
     }
-    this.setState({error:false})
+    this.setState({ error: false });
     try {
       const { user } = await auth.createUserWithEmailAndPassword(
         email,
@@ -45,16 +44,16 @@ class SignUp extends React.Component {
     }
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     const { name, value } = event.target;
-    this.setState({[name]: value})
-  }
+    this.setState({ [name]: value });
+  };
 
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
-      <div className="sign-up">
-        <h2 className="title"> I do not have a accout</h2>
+      <SignUpContainer>
+        <SignUpTitle> I do not have a accout</SignUpTitle>
         <span>Sign up with your email and password</span>
         <form className="sign-up-form" onSubmit={this.handleSubmit}>
           <FormInput
@@ -91,7 +90,7 @@ class SignUp extends React.Component {
           />
           <Button type="submit">SIGN UP</Button>
         </form>
-      </div>
+      </SignUpContainer>
     );
   }
 }
