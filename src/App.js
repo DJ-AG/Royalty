@@ -26,7 +26,6 @@ import  CheckOutPage from './pages/checkout/checkout.component'
 //FireBase
 import { auth, createUserProfileDocument } from "./firebase/firebase.util.js";
 
-
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
