@@ -23,6 +23,9 @@ import SignInSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.compon
 //CheckOut
 import  CheckOutPage from './pages/checkout/checkout.component'
 
+//Footer
+import Footer from './components/footer/footer.componen'
+
 //FireBase
 import { auth, createUserProfileDocument } from "./firebase/firebase.util.js";
 
@@ -51,9 +54,11 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <div className="cockPit">
       <GlobalStyle/>
+      <div className='content-wrap'>
         <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -68,6 +73,10 @@ class App extends React.Component {
             }
           />
         </Switch>
+        <div>
+        </div>
+        <Footer></Footer>
+        </div>
       </div>
     );
   }
