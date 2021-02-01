@@ -18,7 +18,8 @@ export const CollectionItemContainer = styled.div`
     }
   }
   @media screen and (max-width:800px){
-      width: 40vw ;
+      width: 42vw ;
+      height: 250px;
     }
     &:hover {
     .image {
@@ -28,6 +29,7 @@ export const CollectionItemContainer = styled.div`
       opacity: unset;
       display: flex;
     }
+    
   }
 `;
 
@@ -42,6 +44,8 @@ export const AddButton = styled(Button)`
   opacity:0.9;
   min-width:unset;
   padding : 0 10px 0 10px;
+  top: 170px;
+  width:70%
   }
 `;
 

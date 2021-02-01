@@ -6,6 +6,7 @@ import {
   OptionsContainer,
   OptionLink,
   RoyaltyText,
+  Border
 } from "./header.styles";
 
 import { connect } from "react-redux";
