@@ -5,6 +5,7 @@ import {
   LogoContainer,
   OptionsContainer,
   OptionLink,
+  RoyaltyText,
 } from "./header.styles";
 
 import { connect } from "react-redux";
@@ -23,7 +24,7 @@ const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
     <LogoContainer to="/">
       <Logo className="logo" />
-      <span className="glow">ROYALTY</span>
+      <RoyaltyText>ROYALTY</RoyaltyText>
     </LogoContainer>
     <OptionsContainer>
       <OptionLink to="/shop">SHOP</OptionLink>
