@@ -29,6 +29,10 @@ export const QuantityContainer = styled(TextContainer)`
   }
   div {
     cursor: pointer;
+    @media screen and (max-width:800px){
+      font-size: 20px;
+      font-weight:bold;
+    }
   }
 `;
 

@@ -8,6 +8,7 @@ export const SignInAndSignUpContainer = styled.div`
     @media screen and (max-width:800px){
         width: 100%;
         display: grid;
-        grid-gap: 50px;      
+        grid-gap: 50px;
+        padding-left:12px      
     }
 `

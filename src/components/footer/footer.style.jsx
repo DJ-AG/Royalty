@@ -4,7 +4,7 @@ export const FooterContainer = styled.div`
   color: white;
   background-color: black;
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   overflow: hidden;
 `;

@@ -7,6 +7,9 @@ export const CheckoutPageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 50px auto 0;
+  @media screen and (max-width:800px){
+    width:80%;
+  }
 `;
 export const CheckoutHeaderContainer = styled.div`
   width: 100%;
@@ -31,10 +34,17 @@ export const TotalContainer = styled.div`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
+  @media screen and (max-width:800px){
+    font-size:26px;
+  }
 `;
 export const WarningTextContainer = styled.div`
   text-align: center;
   margin-top: 40px;
   font-size: 24px;
   color: red;
+  @media screen and (max-width:800px){
+    font-size:20px;
+    margin-bottom: 10px
+  }
 `;
