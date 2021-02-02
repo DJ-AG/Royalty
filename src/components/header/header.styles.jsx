@@ -7,19 +7,21 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-
+  @media screen and (min-width: 1000px) {
+    width: 90%;
+  }
   @media screen and (max-width: 800px) {
     height: 60px;
     padding: 10px;
     margin-bottom: 50px;
-    &:after{
-    content: '';
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top:95px;
-    border-bottom: 1px solid #ccc;
-    display: block;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 95px;
+      border-bottom: 1px solid #ccc;
+      display: block;
     }
   }
 `;
@@ -29,6 +31,10 @@ export const LogoContainer = styled(Link)`
   width: 70px;
   padding: 5px;
   text-decoration: none;
+  @media screen and (min-width: 1000px) {
+    padding: 20px;
+    margin-left:100px
+  }
   @media screen and (max-width: 800px) {
     width: 50px;
     padding: 0;
@@ -39,7 +45,6 @@ export const RoyaltyText = styled.div`
   margin-left: 4px;
   text-decoration: none;
 `;
-
 
 export const OptionsContainer = styled.div`
   width: 50%;

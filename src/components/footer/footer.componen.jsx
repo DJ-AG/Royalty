@@ -7,37 +7,31 @@ import {
   ContentContainer,
   FirstElement,
   SecondElement,
-  ListUnstyleContainer,
+  LogoContainer
 } from "./footer.style";
+
+import { ReactComponent as Logo } from "../../assets/vectorpaint.svg";
+
 
 const Footer = () => (
   <FooterContainer>
     <MainContainer>
       <ContentContainer>
         <FirstElement>
-          <HeadingElement>Royalty</HeadingElement>
+          <HeadingElement>ROYALTY</HeadingElement>
+          <LogoContainer>
+          <Logo/>
+
+          </LogoContainer>
         </FirstElement>
         <br />
         <hr />
         <SecondElement>
-          <ListUnstyleContainer>
-            <li>Contanct</li>
-            <li>mo</li>
-            <li> 1254 street </li>
-          </ListUnstyleContainer>
-          <ListUnstyleContainer>
-            <li>Contanct</li>
-            <li>mo</li>
-            <li> 1254 street </li>
-          </ListUnstyleContainer>
-        </SecondElement>
-        <hr />
-        <div className="row">
           <p className="col-sm">
             &copy;{new Date().getFullYear()} Royalty | ALL right
             reserved | terms of service | privecy
           </p>
-        </div>
+        </SecondElement>
       </ContentContainer>
     </MainContainer>
   </FooterContainer>
