@@ -16,17 +16,15 @@ export const CartDropDownContainer = styled.div`
   z-index: 5;
 `
 export const CartItemsContainer = styled.div`
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
 `
 export const EmptyMessageContainer = styled.span`
-    font-size: 18px;
-    margin: 15px auto;
+font-size: 18px;
+  margin: 50px auto;
 `
 export const AddButton = styled(Button)`
-  button {
-    margin-top: auto;
-  }
+ margin-top: auto;
 `

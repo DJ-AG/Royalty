@@ -4,11 +4,12 @@ import {
   CartItemContainer,
   ItemDetailsContainer,
   NameContainer,
+  CartItemImage
 } from "./cart-item.style";
 
 const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
   <CartItemContainer>
-    <img src={imageUrl} alt="Item" />
+    <CartItemImage src={imageUrl} alt="Item" />
     <ItemDetailsContainer>
       <NameContainer>{name}</NameContainer>
       <span className="price">

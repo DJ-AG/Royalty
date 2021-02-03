@@ -17,19 +17,16 @@ export const CollectionItemContainer = styled.div`
       display: flex;
     }
   }
-  @media screen and (max-width:800px){
-      width: 42vw ;
-      height: 250px;
-    }
+  @media screen and (max-width: 800px) {
+    width: 40vw;
     &:hover {
-    .image {
-      opacity: unset;
+      .image {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
     }
-    button {
-      opacity: unset;
-      display: flex;
-    }
-    
   }
 `;
 
@@ -40,12 +37,10 @@ export const AddButton = styled(Button)`
   top: 255px;
   display: none;
   @media screen and (max-width:800px){
-  display:block;
-  opacity:0.9;
-  min-width:unset;
-  padding : 0 10px 0 10px;
-  top: 170px;
-  width:70%
+    display: block;
+    opacity: 0.9;
+    min-width: unset;
+    padding: 0 10px;
   }
 `;
 

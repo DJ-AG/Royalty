@@ -20,3 +20,7 @@ export const ItemDetailsContainer = styled.div`
 export const NameContainer = styled.span`
   font-size: 16px;
 `;
+
+export const CartItemImage = styled.img`
+width: 30%;
+`
