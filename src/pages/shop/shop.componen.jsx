@@ -22,7 +22,7 @@ class ShopPage extends React.Component {
 
   componentDidMount() {
     const { updateCollections } = this.props;
-    const collectionRef = firestore.collection('collections');
+    const collectionRef = firestore.collection("collections");
 
     collectionRef.get().then((snapshot) => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
@@ -43,9 +43,12 @@ class ShopPage extends React.Component {
             <CollectionsOverwWithSpinner isLoading={loading} {...props} />
           )}
         />
-        <Route path={`${match.path}/:collectionId`} render={(props) => (
-          <CollectionPageWithSpinner isLoading={loading} {...props} />
-        )} />
+        <Route
+          path={`${match.path}/:collectionId`}
+          render={(props) => (
+            <CollectionPageWithSpinner isLoading={loading} {...props} />
+          )}
+        />
       </div>
     );
   }
@@ -57,3 +60,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(null, mapDispatchToProps)(ShopPage);
+
+
+/*https://firestore.googleapis.com/v1/projects/crwn-db-d8ffb/databases/(default)/documents/cities/LA
+*/
