@@ -12,5 +12,8 @@ export const SignInAndSignUpContainer = styled.div`
     > *:first-child {
       margin-bottom: 50px;
     }
+    >*:last-child {
+      margin-bottom:100px;
+    }
   }
 `

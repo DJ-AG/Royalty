@@ -1,22 +1,20 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: black;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  overflow: hidden;
-  @media screen and (max-width: 800px) {
-    position: relative;
-  }
+  text-align: center;
+  color:white;
 `;
 
 export const MainContainer = styled.div`
   padding: 0 6.4vw;
 `;
 export const ContentContainer = styled.div`
-  padding: 2vw 0;
+  padding: 0.5vw 0;
 `;
 export const FirstElement = styled.div`
   display: grid;
@@ -29,9 +27,18 @@ export const FirstElement = styled.div`
   }
 `;
 
-export const LogoContainer = styled.div`
-  padding:20px 0 0 28px;
+export const LinkContainer = styled.a`
+color:white;
+text-decoration:none;
+cursor: pointer;
+&:hover{
+  color:gray;
+  transition: 200ms ease-out
+}
+`
 
+export const LogoContainer = styled.div`
+padding-top:20px;
 `
 
 export const SecondElement = styled.div`

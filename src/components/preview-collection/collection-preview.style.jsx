@@ -4,9 +4,11 @@ import styled from 'styled-components'
 export const CollectionPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin:0 50px 30px 50px;
   @media screen and (max-width: 800px) {
+    margin:0 0 30px 0;
     align-items: center;
+    padding:unset;
   }
 `
 export const TitleContainer = styled.h1`

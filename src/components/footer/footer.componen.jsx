@@ -7,11 +7,11 @@ import {
   ContentContainer,
   FirstElement,
   SecondElement,
-  LogoContainer
+  LogoContainer,
+  LinkContainer,
 } from "./footer.style";
 
 import { ReactComponent as Logo } from "../../assets/vectorpaint.svg";
-
 
 const Footer = () => (
   <FooterContainer>
@@ -20,16 +20,15 @@ const Footer = () => (
         <FirstElement>
           <HeadingElement>ROYALTY</HeadingElement>
           <LogoContainer>
-          <Logo/>
-
+            <Logo />
           </LogoContainer>
         </FirstElement>
         <br />
         <hr />
         <SecondElement>
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} Royalty | ALL right
-            reserved | terms of service | privecy
+          <p>
+            &copy;{new Date().getFullYear()} Royalty | ALL right reserved |
+            <LinkContainer> Terms of service</LinkContainer> |<LinkContainer>Privecy</LinkContainer>
           </p>
         </SecondElement>
       </ContentContainer>

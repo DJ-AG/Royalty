@@ -1,7 +1,6 @@
 import React from "react";
 
-import { GlobalStyle } from './global-styles/global.style'
-
+import { GlobalStyle } from "./global-styles/global.style";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./Redux/user/user.action";
@@ -21,10 +20,10 @@ import Header from "./components/header/header.component";
 import SignInSignUp from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 
 //CheckOut
-import  CheckOutPage from './pages/checkout/checkout.component'
+import CheckOutPage from "./pages/checkout/checkout.component";
 
 //Footer
-import Footer from './components/footer/footer.componen'
+import Footer from "./components/footer/footer.componen";
 
 //FireBase
 import { auth, createUserProfileDocument } from "./firebase/firebase.util.js";
@@ -54,29 +53,26 @@ class App extends React.Component {
   }
 
   render() {
-
     return (
-      <div className="cockPit">
-      <GlobalStyle/>
-      <div className='content-wrap'>
+      <div>
+        <GlobalStyle />
         <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route path="/contact" component="" />
-          <Route path="/checkout" component={CheckOutPage}/>
-          <Route
-            exact
-            path="/signin"
-            render={() =>
-              this.props.currentUser ? <Redirect to="/" /> : <SignInSignUp />
-            }
-          />
-        </Switch>
         <div>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/shop" component={ShopPage} />
+            <Route path="/contact" component="" />
+            <Route path="/checkout" component={CheckOutPage} />
+            <Route
+              exact
+              path="/signin"
+              render={() =>
+                this.props.currentUser ? <Redirect to="/" /> : <SignInSignUp />
+              }
+            />
+          </Switch>
         </div>
-        <Footer></Footer>
-        </div>
+        <Footer />
       </div>
     );
   }
